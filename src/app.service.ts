@@ -6,6 +6,8 @@ export class AppService {
 
   getHello(): string {
     this.logger.log('Getting Hello World!');
+    this.logger.error('This is an error message');
+    this.logger.warn('This is a warning message');
     return 'Hello World!';
   }
 }
